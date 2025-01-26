@@ -1,5 +1,4 @@
 import type { Config } from 'tailwindcss'
-import typography from '@tailwindcss/typography'
 
 export default {
   content: [
@@ -9,7 +8,12 @@ export default {
   ],
   darkMode: 'class',
   theme: {
-    extend: {}
+    extend: {
+      colors: {
+        'my-blue': '#02487d',
+        'my-green': '#ddfdcc'
+      }
+    }
   },
-  plugins: [typography]
+  plugins: []
 } satisfies Config
