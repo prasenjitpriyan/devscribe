@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { Lilita_One } from 'next/font/google'
+import ThemeSwitch from './ThemeSwitch'
 
 const font = Lilita_One({ weight: '400', subsets: ['latin'] })
 
@@ -14,6 +15,7 @@ const Navbar = () => {
             <span className="text-purple-500">Blook</span>
           </div>
         </Link>
+        <ThemeSwitch />
       </div>
     </div>
   )
