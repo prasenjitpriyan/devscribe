@@ -41,6 +41,12 @@ export const post = {
           fields: [{ type: 'text', name: 'alt', title: 'Alt' }]
         }
       ]
+    },
+    {
+      name: 'tags',
+      title: 'Tags',
+      type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'tag' }] }]
     }
   ]
 }
