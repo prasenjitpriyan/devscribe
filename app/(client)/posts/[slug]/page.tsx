@@ -6,12 +6,6 @@ import Link from 'next/link'
 import { VT323 } from 'next/font/google'
 import { notFound } from 'next/navigation'
 
-interface Params {
-  params: {
-    slug: string
-  }
-}
-
 const dateFont = VT323({ weight: '400', subsets: ['latin'] })
 
 async function getPost(slug: string) {
@@ -31,12 +25,13 @@ async function getPost(slug: string) {
     },
   }
   `
+
   const post = await client.fetch(query)
   return post
 }
 
-const Page = async ({ params }: Params) => {
-  const { slug } = await params
+const Page = async (props: { params: Promise<{ slug: string }> }) => {
+  const { slug } = await props.params
 
   const post: Post = await getPost(slug)
 
