@@ -4,7 +4,7 @@
 
 html {
   position: relative;
-  overflow: hidden;
+  overflow: auto;
 }
 
 body {
