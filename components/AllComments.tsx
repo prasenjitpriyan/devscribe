@@ -35,8 +35,11 @@ const AllComments = ({ comments, slug, commentsOrder }: Props) => {
           </Link>
         </div>
       )}
-      {comments?.map((comment) => (
-        <div key={comment?._id} className="border-b border-gray-200/50 py-2">
+      {comments?.map((comment, index) => (
+        <div
+          key={comment?._id || `comment-${index}`} // Use _id if available; fallback to index
+          className="border-b border-gray-200/50 py-2"
+        >
           <p>
             <strong>{comment?.name}</strong>{' '}
             <span className="text-gray-500 text-sm">

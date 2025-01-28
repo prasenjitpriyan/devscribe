@@ -139,6 +139,7 @@ const portableTextComponents = {
         width={700}
         height={400}
         className="rounded-md mx-auto"
+        priority
       />
     )
   },
