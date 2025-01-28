@@ -7,19 +7,19 @@ import { Provider } from '@/utils/Provider'
 const firaCode = Fira_Code({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://next-cms-blog-ce.vercel.app/'),
+  metadataBase: new URL('https://devscribe-six.vercel.app/'),
   title: {
-    default: 'Dev Blook - A blog for developers',
+    default: 'Dev Scribe - A blog for developers',
     template: '%s | Dev Blook - A blog for developers'
   },
   description: 'A blog for developers by developers!',
   openGraph: {
-    title: 'Dev Blook - A blog for developers',
+    title: 'Dev Scribe - A blog for developers',
     description: 'A blog for developers by developers!',
     type: 'website',
     locale: 'en_US',
-    url: 'https://next-cms-blog-ce.vercel.app/',
-    siteName: 'DevBlook'
+    url: 'https://devscribe-six.vercel.app/',
+    siteName: 'DevScribe'
   }
 }
 

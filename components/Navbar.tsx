@@ -12,7 +12,7 @@ const Navbar = () => {
         <Link href="/">
           <div className={`${font.className} text-3xl dark:text-amber-50`}>
             Dev
-            <span className="text-purple-500">Blook</span>
+            <span className="text-purple-500">Scribe</span>
           </div>
         </Link>
         <ThemeSwitch />

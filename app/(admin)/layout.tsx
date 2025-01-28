@@ -3,7 +3,7 @@ import { Provider } from '@/utils/Provider'
 import './globals.css'
 
 export const metadata = {
-  title: 'Dev Blook - A blog for developers',
+  title: 'Dev Scribe - A blog for developers',
   description: 'A blog for developers by developers!'
 }
 
